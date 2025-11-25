@@ -8,8 +8,8 @@ from functions.exceptions import CompanyNotFound
 # -------------------- CONFIG --------------------
 load_dotenv()
 
-email_id = os.getenv("REPVUE_EMAIL") or "coderk210@gmail.com"
-password = os.getenv("REPVUE_PASS") or "Black2001@1315"
+email_id = os.getenv("REPVUE_EMAIL")
+password = os.getenv("REPVUE_PASS")
 
 companies = [
     "Salesforce", "Trimble Inc.", "Hubspot"

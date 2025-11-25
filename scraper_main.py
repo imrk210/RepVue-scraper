@@ -1,13 +1,14 @@
 import os,time
-# from dotenv import load_dotenv
+
+from dotenv import load_dotenv
 from service import RepVueService
 from functions.exceptions import CompanyNotFound
 
-# load_dotenv()
+load_dotenv()
 
 #credentials
-email_id = "coderk210@gmail.com"          # KeyError if missing
-password = "Black2001@1315" 
+email_id = os.getenv("REPVUE_EMAIL")          # KeyError if missing
+password = os.getenv("REPVUE_PASS") 
 
 #company name   
 Company_name = "Salesforce"
