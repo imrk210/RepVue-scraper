@@ -12,7 +12,7 @@ email_id = os.getenv("REPVUE_EMAIL")
 password = os.getenv("REPVUE_PASS")
 
 companies = [
-    "Salesforce", "Trimble Inc.", "Hubspot"
+    "Salesforce"
 ]
 output_file = "repvue_data.xlsx"
 
@@ -80,7 +80,7 @@ try:
                     continue
 
                 # Wait briefly for page load; replace with svc wait if available
-                time.sleep(1)
+                time.sleep(2)
 
                 info = svc.general_info() or {}
                 perf = svc.performance() or {}
